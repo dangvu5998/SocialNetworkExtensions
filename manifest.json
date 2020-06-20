@@ -1,0 +1,41 @@
+{
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com https://code.jquery.com; object-src 'self'",
+  "description": "Utilities for facebook and much more!",
+  "icons": {
+    "128": "icon.png",
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [{
+    "matches": [
+      "*://fb.com/*",
+      "*://facebook.com/*",
+      "*://www.facebook.com/*"
+    ],
+    "js": [
+      "js/jquery-3.5.1.js",
+      "FBMessagesBlur.js"
+    ],
+    "css": ["css/FBMessenger.css"],
+    "all_frames": true
+  }],
+  "manifest_version": 2,
+  "name": "Social network web utilities",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "notifications",
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "version": "1.0"
+}

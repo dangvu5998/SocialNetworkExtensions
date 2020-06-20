@@ -1,0 +1,50 @@
+.popup {
+  width: 300px;
+  max-width: 500px;
+  max-height: 800px;
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+  color: #666;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  right: 9000px;
+}
+
+/*Check box*/
+input[type="checkbox"] + .label-text:before {
+  content: "\f096";
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:checked + .label-text:before {
+  content: "\f14a";
+  color: #2980b9;
+  animation: effect 250ms ease-in;
+}
+
+input[type="checkbox"]:disabled + .label-text {
+  color: #aaa;
+}
+
+input[type="checkbox"]:disabled + .label-text:before {
+  content: "\f0c8";
+  color: #ccc;
+}
+.form-check {
+  padding-left: 0px !important;
+}

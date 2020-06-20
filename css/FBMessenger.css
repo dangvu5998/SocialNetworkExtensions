@@ -1,0 +1,11 @@
+.contentBlur.messagesCustomize.messagesContentBlur
+{
+  -webkit-filter: blur(3px) !important;
+  filter: blur(3px) !important;
+}
+
+.contentBlur.messagesCustomize.messagesContentBlur:hover
+{
+  -webkit-filter: blur(0px) !important;
+  filter: blur(0px) !important;
+}
