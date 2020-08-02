@@ -11,19 +11,25 @@
     "default_popup": "popup.html"
   },
 
-  "content_scripts": [{
-    "matches": [
-      "*://fb.com/*",
-      "*://facebook.com/*",
-      "*://www.facebook.com/*"
-    ],
-    "js": [
-      "js/jquery-3.5.1.js",
-      "FBMessagesBlur.js"
-    ],
-    "css": ["css/FBMessenger.css"],
-    "all_frames": true
-  }],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://fb.com/*",
+        "*://facebook.com/*",
+        "*://www.facebook.com/*"
+      ],
+      "js": ["js/jquery-3.5.1.js", "FBMessagesBlur.js"],
+      "css": ["css/FBMessenger.css"],
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "*://youtube.com/*",
+        "*://www.youtube.com/*"
+      ],
+      "js": ["js/jquery-3.5.1.js", "YoutubeUtils.js"]
+    }
+  ],
   "manifest_version": 2,
   "name": "Social network web utilities",
   "permissions": [
