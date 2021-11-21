@@ -1,7 +1,7 @@
 .contentBlur.messagesCustomize.messagesContentBlur
 {
-  -webkit-filter: blur(3px) !important;
-  filter: blur(3px) !important;
+  -webkit-filter: blur(2px) !important;
+  filter: blur(2px) !important;
 }
 
 .contentBlur.messagesCustomize.messagesContentBlur:hover

@@ -28,6 +28,13 @@
         "*://www.youtube.com/*"
       ],
       "js": ["js/jquery-3.5.1.js", "YoutubeUtils.js"]
+    },
+    {
+      "matches": [
+        "*://www.instagram.com/*",
+        "*://instagram.com/*"
+      ],
+      "js": ["js/jquery-3.5.1.js", "InstaUtils.js"]
     }
   ],
   "manifest_version": 2,
